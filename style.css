@@ -104,3 +104,21 @@
             position: absolute;
             transform-origin: bottom;
         }
+        #btn
+        {
+            height: 2.8rem;
+    border-radius: 14%;
+    width: 11rem;
+    margin: auto;
+    margin: 23px auto;
+    padding: 0px;
+    display: block;
+    border-right-color: grey;
+    color: black;
+    font-size: 2rem;
+        }
+        #btn:hover
+        {
+            transform: scale(1.2);
+            transition-duration: 1s;
+        }
