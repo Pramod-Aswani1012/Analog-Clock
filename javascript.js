@@ -16,4 +16,24 @@ setInterval(() => {
     h.style.transform = `rotate(${hrotation}deg)`;
     m.style.transform = `rotate(${mrotation}deg)`;
     s.style.transform = `rotate(${srotation}deg)`;
+
+    audio.currentTime = 0;
+	audio.play();
 }, 1000);
+
+let b = document.getElementById('btn');
+let aud = document.getElementById('audi');
+function pauseAudio()
+{
+    if(b.innerHTML=="Without Audio")
+    {
+        aud.pause();
+        b.innerHTML="With Audio"
+    }
+    else
+    {
+        aud.play();
+        b.innerHTML="Without Audio";
+        b.style.fontSize='1.5rem'
+    }
+}
